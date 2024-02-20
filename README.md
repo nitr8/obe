@@ -8,7 +8,7 @@ It’s not an image as per say, more a process of taking an image provided by Mi
 | ------------- | ------------- |
 | ![](https://raw.githubusercontent.com/nitr8/obe/main/images/win-11-orig.png) | ![](https://raw.githubusercontent.com/nitr8/obe/main/images/win-11-obe.png) |
 
-To get started download any Official Microsoft windows iso preferably the latest with integrated service packs. For this purpose, lets download the official Windows 11 23H3 English International version from  [Microsoft Software Download (https://www.microsoft.com/software-download/windows11) image.
+To get started download any Official Microsoft windows iso preferably the latest with integrated service packs. For this purpose, lets download the official Windows 11 23H3 English International version from [Microsoft Software Download (https://www.microsoft.com/software-download/windows11)] image.
 
 From the downloaded iso `Win11_23H2_EnglishInternational_x64v2.iso` extract ` install.wim` from the `\sources` folder into `c:\win-11\` for example.
 
