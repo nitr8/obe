@@ -7,7 +7,6 @@ It’s not an image as per say, more a process of taking an image provided by Mi
 To get started download any Official Microsoft windows iso preferably the latest with integrated service packs. For this purpose, lets download the official https://www.microsoft.com/software-download/windows11 image.
 
 
-| First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
