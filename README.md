@@ -10,4 +10,4 @@ To get started download any Official Microsoft windows iso preferably the latest
 
 | Origianl | OBE |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| ![](https://raw.githubusercontent.com/nitr8/obe/main/images/win-11-orig.png=250x250) | Content Cell  |
