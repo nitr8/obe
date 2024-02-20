@@ -15,17 +15,6 @@ From the downloaded iso `Win11_23H2_EnglishInternational_x64v2.iso` extract ` in
 Displays information about the images that are contained in a .wim
 ```
 Dism /Get-ImageInfo /ImageFile:C:\win-11\install.wim | Select-String Index,Name
-
-Details for image : C:\win-11\install.wim
-
-Index : 1
-Name : Windows 11 Home
-
-Index : 4
-Name : Windows 11 Education
-
-Index : 6
-Name : Windows 11 Pro
 ```
 
 Now let’s use `Windows 11 Pro` which is index `6` and export just that one image to a new WIM. Don’t worry we will change it to `Windows 11 Enterprise` later on.
@@ -46,4 +35,25 @@ This will add two KB’s and then reset the image base.
 Dism /Image:C:\mnt /Add-Package /PackagePath:C:\win-11\kb\windows11.0-kb5034467.msu
 Dism /Image:C:\mnt /Add-Package /PackagePath:C:\win-11\kb\windows11.0-kb5034765.msu
 Dism /Image:C:\mnt /cleanup-image /StartComponentCleanup /ResetBase
+```
+
+Get a list of install packages and remove what’s not needed. See table below for list of Packages/AppxPackages/Features not safe to remove/disable.
+```
+DISM /Image:C:\mnt /Get-Packages | Select-String Identity
+DISM /Image:C:\mnt /Remove-Package /PackageName:Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package~31bf3856ad364e35~amd64~~10.0.22621.3155
+```
+
+```
+DISM /Image:C:\mnt /Get-ProvisionedAppxPackages | Select-String Packagename
+DISM /Image:C:\mnt /Remove-ProvisionedAppxPackage /PackageName:Clipchamp.Clipchamp_2.2.8.0_neutral_~_yxz26nhyzhsrt
+```
+
+```
+Dism /Image:C:\mnt /Get-Features /Format:Table | find "| Enabled"
+DISM /Image:C:\mnt /Disable-Feature /FeatureName:Windows-Defender-Default-Definitions /Remove
+```
+
+Unmount WIM
+```
+Dism /Unmount-Image /MountDir:C:\mnt /Commit
 ```
