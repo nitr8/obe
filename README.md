@@ -8,7 +8,7 @@ It’s not an image as per say, more a process of taking an image provided by Mi
 | ------------- | ------------- |
 | ![](https://raw.githubusercontent.com/nitr8/obe/main/images/win-11-orig.png) | ![](https://raw.githubusercontent.com/nitr8/obe/main/images/win-11-obe.png) |
 
-To get started download any Official Microsoft windows iso preferably the latest with integrated service packs. For this purpose, lets download the official Windows 11 23H3 English International version from  [Microsoft Software Download (https://www.microsoft.com/software-download/windows11) image.
+To get started download any Official Microsoft windows iso preferably the latest with integrated service packs. For this purpose, lets download the official Windows 11 23H3 English International version from  [Microsoft Software Download (https://www.microsoft.com/software-download/windows11)] image.
 
 From the downloaded iso `Win11_23H2_EnglishInternational_x64v2.iso` extract ` install.wim` from the `\sources` folder into `c:\win-11\` for example.
 
@@ -39,7 +39,7 @@ Mount the WIM to a local folder, to start to modify the window image.
 Dism /Mount-Image /ImageFile:C:\win-11\install_boe.wim /index:1 /MountDir:C:\mnt
 ```
 
-Before removing or disabling any components it is recommended to first update the images with the latest service. The best way to achive this would be to deploy a test image, go online see what updates are missing, take not of the KB and use that to download from the [Microsoft Update Catalog (https://www.catalog.update.microsoft.com). Once the file is 
+Before removing or disabling any components it is recommended to first update the images with the latest service. The best way to achive this would be to deploy a test image, go online see what updates are missing, take not of the KB and use that to download from the [Microsoft Update Catalog (https://www.catalog.update.microsoft.com)]. Once the file is 
 ```
 Dism /Image:C:\mnt /LogPath:logs\kb5034467.log /Add-Package /PackagePath:C:\win-11\kb\windows11.0-kb5034467.msu
 Dism /Image:C:\mnt /LogPath:logs\kb5034765.log /Add-Package /PackagePath:C:\win-11\kb\windows11.0-kb5034765.msu
