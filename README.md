@@ -5,3 +5,5 @@ Windows OBE / is a stripped down, hardened windows 10/11 x86/x64/arm64 image thi
 It’s not an image as per say, more a process of taking an image provided by Microsoft and stripping it in a supported documented manner. No tools, no tricks just pure RTFM stuff.
 
 To get started download any Official Microsoft windows iso preferably the latest with integrated service packs. For this purpose, lets download the official https://www.microsoft.com/software-download/windows11 image.
+
+| First Header  | Second Header |
