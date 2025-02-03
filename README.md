@@ -10,7 +10,8 @@ It’s not an image as per say, more a process of taking an image provided by Mi
 
 To get started download any Official Microsoft windows iso preferably the latest with integrated service packs. [Microsoft Software Download](https://www.microsoft.com/software-download/windows11)
 
-For this purpose, We will use the official (Windows 11 IoT Enterprise, version 24H2) English International version. [Windows 11 IoT Enterprise LTSC 2024](https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/whats-new/windows-11-iot-enterprise-ltsc-2024).
+For this purpose, We will use the official (Windows 11 IoT Enterprise, version 24H2) English International version. `en-us_windows_11_iot_enterprise_ltsc_2024_x64_dvd_f6b14814.iso` (SHA256): `4F59662A96FC1DA48C1B415D6C369D08AF55DDD64E8F1C84E0166D9E50405D7A`
+[Windows 11 IoT Enterprise LTSC 2024](https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/whats-new/windows-11-iot-enterprise-ltsc-2024).
 
 From the downloaded iso `Win11_23H2_EnglishInternational_x64v2.iso` extract ` install.wim` from the `\sources` folder into `c:\win-11\` for example.
 
