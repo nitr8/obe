@@ -1,6 +1,6 @@
-# Windows OBE (Berner Oberland Edition)
+# Windows BOE (Berner Oberland Edition)
 
-Windows OBE / is a stripped down, hardened windows 10/11 x86/x64/arm64 image think of it as a pure bare metal OS.
+Windows BOE / is a stripped down, hardened windows 10/11 x86/x64/arm64 image think of it as a pure bare metal OS.
 
 It’s not an image as per say, more a process of taking an image provided by Microsoft and stripping it in a supported documented manner. No tools, no tricks just pure RTFM stuff.
 
@@ -8,7 +8,9 @@ It’s not an image as per say, more a process of taking an image provided by Mi
 | ------------- | ------------- |
 | ![](https://raw.githubusercontent.com/nitr8/obe/main/images/win-11-orig.png) | ![](https://raw.githubusercontent.com/nitr8/obe/main/images/win-11-obe.png) |
 
-To get started download any Official Microsoft windows iso preferably the latest with integrated service packs. For this purpose, lets download the official Windows 11 23H3 English International version from [Microsoft Software Download (https://www.microsoft.com/software-download/windows11)] image.
+To get started download any Official Microsoft windows iso preferably the latest with integrated service packs. [Microsoft Software Download (https://www.microsoft.com/software-download/windows11)]
+
+For this purpose, We will use the official (Windows 11 IoT Enterprise, version 24H2) English International version. [Windows 11 IoT Enterprise LTSC 2024 ([https://www.microsoft.com/software-download/windows11](https://learn.microsoft.com/en-us/windows/iot/iot-enterprise/whats-new/windows-11-iot-enterprise-ltsc-2024))]
 
 From the downloaded iso `Win11_23H2_EnglishInternational_x64v2.iso` extract ` install.wim` from the `\sources` folder into `c:\win-11\` for example.
 
